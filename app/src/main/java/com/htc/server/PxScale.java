@@ -12,4 +12,5 @@ public class PxScale {
 	 */
 	public native int[] getpxRatioxy(int[] px4, int[] py4, int oldRatio, int newRatio, float scale, int w, int h);
 	public native int checkbddata(String data);
+	public native String sayHello();
 }

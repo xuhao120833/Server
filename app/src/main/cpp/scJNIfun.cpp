@@ -59,3 +59,12 @@ Java_com_htc_server_PxScale_checkbddata(JNIEnv *env, jobject thiz, jstring data)
 	}
 	return ret;
 }
+
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_com_htc_server_PxScale_sayHello(JNIEnv* env,jobject thiz) {
+    // 创建 C++ 字符串
+    std::string message = "I'm JNI, Hello Java.";
+    // 返回一个 Java 字符串（jstring）
+    return env->NewStringUTF(message.c_str());
+}

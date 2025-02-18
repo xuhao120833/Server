@@ -1,6 +1,7 @@
 package com.htc.server;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.Px;
@@ -20,5 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         pxScale = new PxScale();
         pxScale.checkbddata("zojdoifjaoidj");
+        String hello = pxScale.sayHello();
+        Toast.makeText(this, hello, Toast.LENGTH_SHORT).show();
     }
 }
